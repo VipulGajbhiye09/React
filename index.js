@@ -25,3 +25,14 @@ ReactDOM.render(
   </div>,
   document.getElementById("root")
 );
+
+//JSX Attributes & Styling
+const img = "https://picsum.photos/600";
+
+ReactDOM.render(
+  <div>
+    <h1 className="heading">Random Image Generator</h1>
+    <img src={img} alt="" />
+  </div>,
+  document.getElementById("root")
+);
