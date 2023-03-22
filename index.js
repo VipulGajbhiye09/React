@@ -27,6 +27,7 @@ ReactDOM.render(
 );
 
 //JSX Attributes & Styling
+
 const img = "https://picsum.photos/600";
 
 ReactDOM.render(
@@ -34,5 +35,19 @@ ReactDOM.render(
     <h1 className="heading">Random Image Generator</h1>
     <img src={img} alt="" />
   </div>,
+  document.getElementById("root")
+);
+
+//Inline Styling in JSX
+
+const customStyle = {
+  color: "red",
+  fontSize: "50px"
+};
+
+customStyle.color = "green";
+
+ReactDOM.render(
+  <h1 style={customStyle}>Hello World!</h1>,
   document.getElementById("root")
 );
