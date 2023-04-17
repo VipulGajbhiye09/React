@@ -51,3 +51,29 @@ ReactDOM.render(
   <h1 style={customStyle}>Hello World!</h1>,
   document.getElementById("root")
 );
+
+//basic styling practice
+const date = new Date();
+const currentTime = date.getHours();
+
+// console.log(currentTime);
+let greeting;
+
+const customStyle = {
+  color: ""
+};
+
+if (currentTime < 12) {
+  greeting = "Good Morning";
+} else if (currentTime < 18) {
+  greeting = "Good Afternoon";
+} else {
+  greeting = "Good Night";
+}
+
+ReactDOM.render(
+  <h1 className="heading">
+    {greeting}
+  </h1>,
+  document.getElementById("root")
+);
