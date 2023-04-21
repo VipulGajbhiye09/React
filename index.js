@@ -85,6 +85,8 @@ ReactDOM.render(
 //import export in ES6
 //index.js
 import pi, { doublePi, triplePi } from "./math.js";
+//or
+import * as pi  from "./math.js";
 
 ReactDOM.render(
   <ul>
